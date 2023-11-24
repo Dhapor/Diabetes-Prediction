@@ -108,20 +108,30 @@ def HomePage():
     st.markdown("<h3 style = 'margin: -15px; color: #2B2A4C; text-align: left; font-family:montserrat'>Background to the story</h3>",unsafe_allow_html=True)
     st.markdown("<p>This project is personal to me because my grandpa had diabetes for a long time. I want to create a computer program that can tell if someone might get diabetes in the future. By using information about a person's health, the program will try to help them know if they need to be careful. I'm doing this so that others don't have to go through what my grandpa did. Let's work together to use technology to help people stay healthy and avoid diabetes.</p>", unsafe_allow_html = True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>The Need for Precision</h3>", unsafe_allow_html=True)
-    st.markdown("<p>Imagine a world where waiting for a package is a thing of the past. In this era of instant gratification, customers expect not just timely deliveries but the exact moment their package will arrive...</p>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>The model features</h3>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Gender</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Gender refers to the biological sex of the individual, which can have an impact on their susceptibility to diabetes. There are three</p>", unsafe_allow_html=True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Navigating Logistics Challenges</h3>", unsafe_allow_html=True)
-    st.markdown("<p>The logistics landscape is riddled with challenges — traffic variations, unpredictable weather conditions, and dynamic delivery routes. Conventional delivery time estimates often fall short in accounting for these factors, resulting in frustrated customers and operational inefficiencies...</p>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Age</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Age is an important factor as diabetes is more commonly diagnosed in older adults.Age ranges from 0-80 in our dataset.</p>", unsafe_allow_html=True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Machine Learning as the Navigator</h3>", unsafe_allow_html=True)
-    st.markdown("<p>At the heart of our initiative is machine learning, a powerful tool that learns and adapts from historical data. By analyzing patterns in delivery times, considering external variables, and continuously learning from each delivery experience, our model becomes a navigator...</p>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Hypertension</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Hypertension is a medical condition in which the blood pressure in the arteries is persistently elevated.</p>", unsafe_allow_html=True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Benefits Beyond Accuracy</h3>", unsafe_allow_html=True)
-    st.markdown("<p>Beyond the immediate benefits of precise delivery time estimates, our model aims to optimize delivery routes, reduce operational costs, and enhance overall customer satisfaction...</p>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Heart Diseases</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Heart disease is another medical condition that is associated with an increased risk of developing diabetes.</p>", unsafe_allow_html=True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>The Future of Delivery</h3>", unsafe_allow_html=True)
-    st.markdown("<p>As we delve into this project, we envision a future where waiting for a delivery is a thing of the past, replaced by a seamless experience where customers know exactly when their package will arrive. Our time of delivery prediction model is not just a tool; it's a glimpse into the future of logistics...</p>", unsafe_allow_html=True)
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Smoking history</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Smoking history is also considered a risk factor for diabetes and can exacerbate the complications associated</p>", unsafe_allow_html=True)
+
+     st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Body Mass Index</h3>", unsafe_allow_html=True)
+    st.markdown("<p>BMI (Body Mass Index) is a measure of body fat based on weight and height. Higher BMI values are linked to a higher risk</p>", unsafe_allow_html=True)
+
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Hemoglobin A1c</h3>", unsafe_allow_html=True)
+    st.markdown("<p>HbA1c (Hemoglobin A1c) level is a measure of a person's average blood sugar level over the past 2-3 months.</p>", unsafe_allow_html=True)
+
+    st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Blood glucose level</h3>", unsafe_allow_html=True)
+    st.markdown("<p>Blood glucose level refers to the amount of glucose in the bloodstream at a given time. </p>", unsafe_allow_html=True)
 
     st.markdown("<p style='text-align: LEFT;'>Join us on this exciting venture as we redefine the logistics landscape, one accurate delivery prediction at a time.</p>", unsafe_allow_html=True)
     st.markdown("---")
