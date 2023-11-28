@@ -136,8 +136,6 @@ def HomePage():
     st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Blood glucose level</h3>", unsafe_allow_html=True)
     st.markdown("<p>Blood glucose level refers to the amount of glucose in the bloodstream at a given time. </p>", unsafe_allow_html=True)
 
-    st.markdown("<p style='text-align: LEFT;'>Join us on this exciting venture as we redefine the logistics landscape, one accurate delivery prediction at a time.</p>", unsafe_allow_html=True)
-    st.markdown("---")
 
     # Streamlit app footer
     st.markdown("<p style='text-align: LEFT; font-size: 12px;'>Created with ❤️ by Datapsalm</p>", unsafe_allow_html=True)
@@ -215,7 +213,7 @@ if selected_page == "Modeling":
 
     st.markdown('<hr>', unsafe_allow_html=True)
 
-    st.markdown("<h8 style = 'color: #2B2A4C; text-align: LEFT; font-family:montserrat'>FINANCIAL INCLUSION BUILT BY DATAPSALM</h8>",unsafe_allow_html=True)
+    st.markdown("<h8 style = 'color: #2B2A4C; text-align: LEFT; font-family:montserrat'>DIABETES PREDICTION MODEL  BUILT BY DATAPSALM</h8>",unsafe_allow_html=True)
 
 
     
