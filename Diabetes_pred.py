@@ -91,7 +91,8 @@ df.head(3)
 
 import streamlit as st
 import pickle
-model = pickle.load(open('Model.pkl', "rb"))
+from tensorflow.keras.models import load_model
+model = load_model('Model.h5')
 
 st.sidebar.image('pngwing.com (12).png', width = 300,)
 st.sidebar.markdown('<br>', unsafe_allow_html=True)
