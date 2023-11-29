@@ -202,13 +202,13 @@ if selected_page == "Modeling":
     if st.button('Press To Predict'):
         st.markdown("<h4 style = 'color: #2B2A4C; text-align: left; font-family: montserrat '>Model Report</h4>", unsafe_allow_html = True)
         predicted = model.predict(input_variables)
-        st.toast('bank_account Predicted')
+        st.toast('Diabetes Status Predicted')
         st.image('check icon.png', width = 100)
         st.success(f'Model Predicted {predicted}')
         if predicted == 0:
-            st.success('The person is not likely to have Diabetes')
+            st.success('The person is not Diabetic and has a low chance of having Diabetes')
         else:
-            st.success('The person is likely to have Diabetes')
+            st.success('The person is Diabetic or has an high of having Diabetes')
 
 
     st.markdown('<hr>', unsafe_allow_html=True)
