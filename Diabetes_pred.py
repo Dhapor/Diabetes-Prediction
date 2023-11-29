@@ -187,14 +187,14 @@ if selected_page == "Modeling":
     cat = input_variables.select_dtypes(include = ['object', 'category'])
     num = input_variables.select_dtypes(include = 'number')
 
-    # Standard Scale the Input Variable.
-    from sklearn.preprocessing import StandardScaler, LabelEncoder
-    for i in input_variables.columns:
-        if i in num.columns:
-            input_variables[i] = StandardScaler().fit_transform(input_variables[[i]])
-    for i in input_variables.columns:
-        if i in cat.columns: 
-            input_variables[i] = LabelEncoder().fit_transform(input_variables[i])
+    # # Standard Scale the Input Variable.
+    # from sklearn.preprocessing import StandardScaler, LabelEncoder
+    # for i in input_variables.columns:
+    #     if i in num.columns:
+    #         input_variables[i] = StandardScaler().fit_transform(input_variables[[i]])
+    # for i in input_variables.columns:
+    #     if i in cat.columns: 
+    #         input_variables[i] = LabelEncoder().fit_transform(input_variables[i])
 
     st.markdown('<hr>', unsafe_allow_html=True)
 
