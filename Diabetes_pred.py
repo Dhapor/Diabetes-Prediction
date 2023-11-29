@@ -207,13 +207,14 @@ if selected_page == "Modeling":
         st.toast('Diabetes Status Predicted')
         st.image('check icon.png', width = 100)
         st.success(f'Model Predicted {predicted}')
-        if predicted == 0:
-            st.success('The person is not Diabetic and has a low chance of having Diabetes')
+        if prediction >= 0.5:
+            st.error('High risk of diabetes!')
         else:
-            st.success('The person is Diabetic or has an high of having Diabetes')
-
+            st.success('Low risk of diabetes.')
 
     st.markdown('<hr>', unsafe_allow_html=True)
+    st.markdown('<hr>', unsafe_allow_html=True)
+    
 
     st.markdown("<h8 style = 'color: #2B2A4C; text-align: LEFT; font-family:montserrat'>DIABETES PREDICTION MODEL  BUILT BY DATAPSALM</h8>",unsafe_allow_html=True)
 
