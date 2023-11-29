@@ -3,7 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 # %matplotlib inline
-pip install tensorflow
+# pip install tensorflow
 import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
 
