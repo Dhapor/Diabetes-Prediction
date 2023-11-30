@@ -207,7 +207,7 @@ if selected_page == "Modeling":
     if st.button('Press To Predict'):
         st.markdown("<h4 style = 'color: #2B2A4C; text-align: left; font-family: montserrat '>Model Report</h4>", unsafe_allow_html = True)
         predicted = model.predict(input_variables)
-        st.toast('Diabetes Status Predicted')
+        st.toast('Predicted Successfully')
         st.image('check icon.png', width = 100)
         st.success(f'Model Predicted {int(np.round(predicted))}')
         if prediction >= 0.5:
@@ -216,10 +216,9 @@ if selected_page == "Modeling":
             st.success('Low risk of diabetes.')
 
     st.markdown('<hr>', unsafe_allow_html=True)
-    st.markdown('<hr>', unsafe_allow_html=True)
     
 
-    st.markdown("<h8 style = 'color: #2B2A4C; text-align: LEFT; font-family:montserrat'>DIABETES PREDICTION MODEL  BUILT BY DATAPSALM</h8>",unsafe_allow_html=True)
+    st.markdown("<h8 style = 'color: #2B2A4C; text-align: LEFT; font-family:montserrat'>DIABETES PREDICTION MODEL BUILT BY DATAPSALM</h8>",unsafe_allow_html=True)
 
 
     
