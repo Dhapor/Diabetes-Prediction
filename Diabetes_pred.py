@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 # %matplotlib inline
 # pip install tensorflow
-import tensorflow as tf
+# import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
 
 data = pd.read_csv('Diabetes_dataset.csv')
