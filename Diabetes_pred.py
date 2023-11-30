@@ -183,11 +183,9 @@ if selected_page == "Modeling":
     }])
 
 
-    st.markdown("<h2 style='text-align: LEFT; color: #2B2A4C;'>Inputed Variables</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: LEFT; color: #2B2A4C;'>Your Input Appears Here</h2>", unsafe_allow_html=True)
     st.write(input_variables)
-    # st.write(input_variables)
-    cat = input_variables.select_dtypes(include = ['object', 'category'])
-    num = input_variables.select_dtypes(include = 'number')
+    
 
     # Standard Scale the Input Variable.
     import pickle
