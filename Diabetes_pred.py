@@ -210,7 +210,7 @@ if selected_page == "Modeling":
         st.toast('Predicted Successfully')
         st.image('check icon.png', width = 100)
         st.success(f'Model Predicted {int(np.round(predicted))}')
-        if prediction >= 0.5:
+        if predicted >= 0.5:
             st.error('High risk of diabetes!')
         else:
             st.success('Low risk of diabetes.')
