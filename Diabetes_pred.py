@@ -104,7 +104,7 @@ def HomePage():
     st.markdown("<h1 style = 'color: #2B2A4C; text-align: center; font-family:montserrat'>Diabetes Prediction Model</h1>",unsafe_allow_html=True)
     st.markdown('<br>', unsafe_allow_html= True)
     st.markdown("<h6 style = 'margin: -15px; color: #2B2A4C; text-align: center ; font-family:montserrat'>Developing an Accurate Diabetes Prediction Model Using Machine Learning to Enhance Early Detection and Improve Patient Outcomes.</h6>",unsafe_allow_html=True)
-    st.image('main.png',  width = 650)
+    st.image('newk.svg',  width = 650)
 
     # Background story
     st.markdown("<h3 style = 'margin: -15px; color: #2B2A4C; text-align: center; font-family:montserrat'>Background to the story</h3>",unsafe_allow_html=True)
