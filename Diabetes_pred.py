@@ -104,7 +104,9 @@ def HomePage():
     st.markdown("<h1 style = 'color: #2B2A4C; text-align: center; font-family:montserrat'>Diabetes Prediction Model</h1>",unsafe_allow_html=True)
     st.markdown('<br>', unsafe_allow_html= True)
     st.markdown("<h6 style = 'margin: -15px; color: #2B2A4C; text-align: center ; font-family:montserrat'>This is a Diabetes Prediction Model that was built Using Machine Learning to Enhance Early Detection and Improve Patient Outcomes.</h6>",unsafe_allow_html=True)
+    st.markdown('<br>', unsafe_allow_html= True)
     st.image('newk.svg',  width = 700)
+    st.markdown('<br>', unsafe_allow_html= True)
 
 
     # Background story
@@ -114,7 +116,7 @@ def HomePage():
     st.markdown('<br>', unsafe_allow_html= True)
     st.markdown('<br>', unsafe_allow_html= True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: center; font-family:montserrat'>The model features</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #2B2A4C;text-align: center; font-family:montserrat'>The Model Features</h3>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Gender</h3>", unsafe_allow_html=True)
     st.markdown("<p>Gender refers to the biological sex of the individual, which can have an impact on their susceptibility to diabetes. There are three</p>", unsafe_allow_html=True)
     st.markdown('<br>', unsafe_allow_html= True)
@@ -146,7 +148,7 @@ def HomePage():
 # Function to define the modeling page content
 def modeling_page():
     st.markdown("<h1 style='text-align: LEFT; color: #2B2A4C;'>Dataset Sample</h1>", unsafe_allow_html=True)
-    st.sidebar.markdown('<br><br><br>', unsafe_allow_html= True)
+    # st.sidebar.markdown('<br><br><br>', unsafe_allow_html= True)
     st.write(df.head())
     # st.sidebar.image('pngwing.com (13).png', width = 300,  caption = 'customer and deliver agent info')
 
