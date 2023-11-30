@@ -165,7 +165,7 @@ if selected_page == "Modeling":
     Hypertension = st.sidebar.selectbox("Hypertension", df['Hypertension'].unique())
     Heart_disease = st.sidebar.selectbox("Heart_disease", df['Heart_disease'].unique())
     Smoking_history = st.sidebar.selectbox('Smoking_history', df['Smoking_history'].unique())
-    Body_Mass_Index = st.sidebar.number_input("Body_Mass_Index", min_value=0, max_value=100, step=1)      
+    Body_Mass_Index = st.sidebar.number_input("Body_Mass_Index",  0.0, 100.0, format="%.2f")      
     Hemoglobin_A1c = st.sidebar.number_input("Hemoglobin_A1c", 0.0, 100.0, format="%.1f")
     Blood_glucose_level = st.sidebar.number_input("Blood_glucose_level",0,1000)
     st.sidebar.markdown('<br>', unsafe_allow_html= True)
