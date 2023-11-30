@@ -107,13 +107,13 @@ def HomePage():
     st.image('main.png',  width = 650)
 
     # Background story
-    st.markdown("<h3 style = 'margin: -15px; color: #2B2A4C; text-align: left; font-family:montserrat'>Background to the story</h3>",unsafe_allow_html=True)
+    st.markdown("<h3 style = 'margin: -15px; color: #2B2A4C; text-align: center; font-family:montserrat'>Background to the story</h3>",unsafe_allow_html=True)
     st.markdown("This project is personal to me because my grandpa had diabetes for a long time. I want to create a computer program that can tell if someone might get diabetes in the future. By using information about a person's health, the program will try to help them know if they need to be careful. I'm doing this so that others don't have to go through what my grandpa did. Let's work together to use technology to help people stay healthy and avoid diabetes", unsafe_allow_html = True)
 
     st.markdown('<br>', unsafe_allow_html= True)
     st.markdown('<br>', unsafe_allow_html= True)
 
-    st.markdown("<h3 style='color: #2B2A4C;text-align: left; font-family:montserrat'>The model features</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #2B2A4C;text-align: center; font-family:montserrat'>The model features</h3>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #2B2A4C;text-align: left; font-family:montserrat'>Gender</h3>", unsafe_allow_html=True)
     st.markdown("<p>Gender refers to the biological sex of the individual, which can have an impact on their susceptibility to diabetes. There are three</p>", unsafe_allow_html=True)
 
