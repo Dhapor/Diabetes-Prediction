@@ -161,12 +161,12 @@ elif selected_page == "Modeling":
 if selected_page == "Modeling":
     st.sidebar.markdown("Add your modeling content here")
     Gender = st.sidebar.selectbox("Gender", df['Gender'].unique())
-    Age = st.sidebar.number_input("Age", 0,1000)
+    Age = st.sidebar.number_input("Age", 0,100)
     Hypertension = st.sidebar.selectbox("Hypertension", df['Hypertension'].unique())
     Heart_disease = st.sidebar.selectbox("Heart_disease", df['Heart_disease'].unique())
     Smoking_history = st.sidebar.selectbox('Smoking_history', df['Smoking_history'].unique())
-    Body_Mass_Index = st.sidebar.number_input("Body_Mass_Index", 0,1000)      
-    Hemoglobin_A1c = st.sidebar.number_input("Hemoglobin_A1c", 0,1000)
+    Body_Mass_Index = st.sidebar.number_input("Body_Mass_Index", 0,0, 100.0)      
+    Hemoglobin_A1c = st.sidebar.number_input("Hemoglobin_A1c", 0.0, 100.0, format="%.1f")
     Blood_glucose_level = st.sidebar.number_input("Blood_glucose_level",0,1000)
     st.sidebar.markdown('<br>', unsafe_allow_html= True)
 
@@ -190,13 +190,16 @@ if selected_page == "Modeling":
     num = input_variables.select_dtypes(include = 'number')
 
     # Standard Scale the Input Variable.
-    from sklearn.preprocessing import StandardScaler, LabelEncoder
-    for i in input_variables.columns:
-        if i in num.columns:
-            input_variables[i] = StandardScaler().fit_transform(input_variables[[i]])
-    for i in input_variables.columns:
-        if i in cat.columns: 
-            input_variables[i] = LabelEncoder().fit_transform(input_variables[i])
+    import pickle
+    filename = 'Finalize_Train.sav'
+    with open(filename, 'rb') as file:
+        saved_data = pickle.load(file)
+    label_encoders = saved_data['label_encoders']
+    scaler = saved_data['scaler']
+
+    for col in input_variables.columns:
+        if col in label_encoders:
+            input_variables[col] = label_encoders[col].transform(input_variables[col])
 
     st.markdown('<hr>', unsafe_allow_html=True)
 
@@ -206,7 +209,7 @@ if selected_page == "Modeling":
         predicted = model.predict(input_variables)
         st.toast('Diabetes Status Predicted')
         st.image('check icon.png', width = 100)
-        st.success(f'Model Predicted {predicted}')
+        st.success(f'Model Predicted {int(np.round(predicted))}')
         if prediction >= 0.5:
             st.error('High risk of diabetes!')
         else:
