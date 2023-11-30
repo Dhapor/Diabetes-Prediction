@@ -104,7 +104,17 @@ def HomePage():
     st.markdown("<h1 style = 'color: #2B2A4C; text-align: center; font-family:montserrat'>Diabetes Prediction Model</h1>",unsafe_allow_html=True)
     st.markdown('<br>', unsafe_allow_html= True)
     st.markdown("<h6 style = 'margin: -15px; color: #2B2A4C; text-align: center ; font-family:montserrat'>This is a Diabetes Prediction Model that was built Using Machine Learning to Enhance Early Detection and Improve Patient Outcomes.</h6>",unsafe_allow_html=True)
-    st.image('newk.svg',  width = 650)
+    # st.image('newk.svg',  width = 650)
+    st.title("newk.svg")
+    # Centered Image
+    st.markdown(
+        """
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <img src='newk.svg' style='width: 650px;'>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     # Background story
     st.markdown("<h3 style = 'margin: -15px; color: #2B2A4C; text-align: center; font-family:montserrat'>Background to the story</h3>",unsafe_allow_html=True)
